@@ -4,11 +4,11 @@ import { Header } from "./components/header/header";
 import { ILinkData } from './shared/interfaces/ILinkData';
 
 const LinkData: ILinkData[] = [
-    {title: 'Обзор'},
-    {title: 'Дизайн'},
-    {title: 'Характеристики'},
-    {title: 'История'},
-    {title: 'Ссылки'}
+    {title: 'Обзор', id: 'general'},
+    {title: 'Дизайн', id: 'design'},
+    {title: 'Характеристики', id: 'characteristics'},
+    {title: 'История', id: 'history' },
+    {title: 'Ссылки', id: 'links'}
 ]
 
 if (document.getElementById('header')) {
