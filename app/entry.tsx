@@ -1,9 +1,9 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 import { Header } from "./components/header/header";
-import { ILinkData } from './shared/interfaces/ILinkData';
+import { IHeaderLinkData } from './shared/interfaces/IHeaderLinkData';
 
-const LinkData: ILinkData[] = [
+const LinkData: IHeaderLinkData[] = [
     {title: 'Обзор', id: 'general'},
     {title: 'Дизайн', id: 'design'},
     {title: 'Характеристики', id: 'characteristics'},
