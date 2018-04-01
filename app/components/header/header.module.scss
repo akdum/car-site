@@ -1,4 +1,21 @@
+@import '../../shared/styles/general.scss';
+
 .navbar {
+    .navbar-brand {
+        line-height: 50px;
+        div {
+            display: inline-block;
+        }
+        .header__logo {
+            margin-right: 1rem;
+        }
+        .header__car-title {
+            font-family: 'Roboto', sans-serif;
+            font-size: 50px;
+            position: relative;
+            top: 10px;
+        }
+    }
     .nav-tabs {
         border: 0;
     }

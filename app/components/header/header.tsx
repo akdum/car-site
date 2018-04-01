@@ -11,7 +11,12 @@ export class Header extends React.Component<IHeaderProps,null> {
     render() {
         return (
             <nav className="navbar navbar-expand-lg navbar-light fixed-top">
-                <a className="navbar-brand" href="#">{this.props.title}</a>
+                <a className="navbar-brand" href="#">
+                    <div className="header__logo">
+                        <img src="../images/gaz_logo.png" />
+                    </div>
+                    <div className="header__car-title">{this.props.title}</div>
+                </a>                
                 <ul className="nav nav-tabs">
                     {this.props.links.map((item) => <li className="nav-item" key={item.tab.title}><HeaderTabItem isHasSublinks={item.subLinks ? true : false} linkData={item.tab}/></li>)}
                 </ul>
