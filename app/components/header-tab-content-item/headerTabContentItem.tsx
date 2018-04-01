@@ -9,7 +9,7 @@ export class HeaderTabContentItem extends React.Component<IHeaderLinkData,null> 
     render() {
         return (
             <div className="tab-pane fade" id={this.props.tab.id} role="tabpanel" aria-labelledby={this.props.tab.id + "-tab"}>
-                {this.props.subLinks && this.props.subLinks.map((link) => <HeaderContentSublink />)}
+                {this.props.subLinks && <ul className="nav">{this.props.subLinks.map((link) => <HeaderContentSublink {...link}/>)}</ul>}
             </div>
         );
     }
