@@ -13,10 +13,10 @@ export class Header extends React.Component<IHeaderProps,null> {
             <nav className="navbar navbar-expand-lg navbar-light fixed-top">
                 <a className="navbar-brand" href="#">{this.props.title}</a>
                 <ul className="nav nav-tabs">
-                    {this.props.links.map((item) => <HeaderTabItem {...item} />)}
+                    {this.props.links.map((item) => <HeaderTabItem {...item.tab} />)}
                 </ul>
                 <div className="tab-content" id="myTabContent">
-                    {this.props.links.map((item) => <HeaderTabContentItem />)}
+                    {this.props.links.map((item) => <HeaderTabContentItem {...item} />)}
                 </div>
             </nav>
         );
