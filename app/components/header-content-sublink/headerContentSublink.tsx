@@ -5,9 +5,7 @@ import { ILinkData } from '../../shared/interfaces/ILinkData';
 export class HeaderContentSublink extends React.Component<ILinkData, null> {
     render() {
         return (
-            <li className="nav-item">
-                <a className="nav-link" href={window.location.origin + this.props.pageAddress}>{this.props.title}</a>
-            </li>
+            <a className="nav-link" href={window.location.origin + this.props.pageAddress}>{this.props.title}</a>
         );
     }
 }
