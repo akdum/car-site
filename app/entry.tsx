@@ -8,7 +8,8 @@ const linkData: ILinkData[] = [
     {title: 'Обзор'},
     {title: 'Галлерея'},
     {title: 'Технологии'},
-    {title: 'История'}
+    {title: 'История'},
+    {title: 'Ссылки'}
 ]
 
 const billboardData = {
