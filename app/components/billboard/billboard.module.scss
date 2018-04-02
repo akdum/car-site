@@ -47,7 +47,40 @@
         }
         .billboard__car-fuel {
             border-right: 1px solid #eee;
+            padding: 25px 25px 45px 25px;
+            div {
+                display: inline-block;
+                vertical-align: top;
+            }
+            .billboard__car-fuel-title {
+                width: 40%;
+            }
+            .billboard__car-fuel-values {
+                p {
+                    margin: 0.2rem;
+                    font-size: 0.7rem;
+                    line-height: 0.7rem;
+                    text-transform: uppercase;
+                }
+                .billboard__car-fuel-values-numbers {
+                    font-size: 1.6rem;
+                    font-weight: 400;
+                    line-height: 1.6rem;
+                }
+            }
         }
-        .billboard__car-seat {}
+        .billboard__car-seat {
+            padding: 25px 25px 45px 25px;
+            .billboard__car-seat-values {
+                p {
+                    margin: 0;
+                }
+                div {
+                    font-size: 1.6rem;
+                    font-weight: 400;
+                    line-height: 1.6rem;
+                }
+            }
+        }
     }
 }

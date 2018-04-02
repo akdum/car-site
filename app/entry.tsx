@@ -16,7 +16,10 @@ const billboardData = {
     imgName: "main_billboard.jpg",
     slogan: "Мы все едем. Некоторые из нас с гораздо большим стилем.",
     price: "270,000",
-    priceDate: '01 апреля 2018'
+    priceDate: '01 апреля 2018',
+    hwyFuel: 7,
+    cityFuel: 15,
+    seatCount: 5
 }
 
 if (document.getElementById('header')) {

@@ -23,8 +23,24 @@ export class Billboard extends React.Component<IBillboardProps, null> {
                             <p>{this.props.priceDate}</p>
                         </div>
                     </div>
-                    <div className="billboard__car-fuel col-md-4"></div>
-                    <div className="billboard__car-seat col-md-3"></div>
+                    <div className="billboard__car-fuel col-md-4">
+                        <div className="billboard__car-fuel-title">
+                            <p>Расход трасса/город</p>
+                        </div>
+                        <div className="billboard__car-fuel-values">
+                            <p>стандартно</p>
+                            <div className="billboard__car-fuel-values-numbers">
+                                {this.props.hwyFuel}/{this.props.cityFuel}
+                            </div>
+                            <p>литров 92</p>
+                        </div>
+                    </div>
+                    <div className="billboard__car-seat col-md-3">
+                        <div className="billboard__car-seat-values">
+                            <p>Мест</p>
+                            <div>{this.props.seatCount}</div>
+                        </div>
+                    </div>
                 </div>
             </div>
         )
