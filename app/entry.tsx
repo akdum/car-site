@@ -20,5 +20,5 @@ const linkData: ILinkData[] = [
 ]
 
 if (document.getElementById('header')) {
-    ReactDOM.render(<Header title={'Volga Siber 2008'} links={linkData} />, document.getElementById('header'));
+    ReactDOM.render(<Header title={'Volga Siber 2008'} links={linkData} contactsPhone={'+7(912)467-08-12'}/>, document.getElementById('header'));
 }
