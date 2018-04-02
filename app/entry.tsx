@@ -3,15 +3,6 @@ import * as ReactDOM from 'react-dom';
 import { Header } from "./components/header/header";
 import { ILinkData } from './shared/interfaces/ILinkData';
 import { Billboard } from './components/billboard/Billboard';
-// import { IHeaderLinkData } from './shared/interfaces/IHeaderLinkData';
-
-// const LinkData: IHeaderLinkData[] = [
-//     {tab: {title: 'Обзор', id: 'general', pageAddress: '/'}},
-//     {tab: {title: 'Дизайн', id: 'design'}, subLinks: [{title: 'Внешний вид'}, {title: 'Интерьер'}]},
-//     {tab: {title: 'Характеристики', id: 'characteristics'}, subLinks: [{title: 'Основные'}, {title: 'Конфигурация'}, {title: 'Безопасность'}]},
-//     {tab: {title: 'История', id: 'history'}, subLinks: [{title: 'Обслуживание'}, {title: 'ДТП'}]},
-//     {tab: {title: 'Ссылки', id: 'links', pageAddress: '/pages/links.html'}}
-// ]
 
 const linkData: ILinkData[] = [
     {title: 'Обзор'},
@@ -20,9 +11,16 @@ const linkData: ILinkData[] = [
     {title: 'История'}
 ]
 
+const billboardData = {
+    imgName: "main_billboard.jpg",
+    slogan: "Мы все едем. Некоторые из нас с гораздо большим стилем.",
+    price: "270,000",
+    priceDate: '01 апреля 2018'
+}
+
 if (document.getElementById('header')) {
     ReactDOM.render(<Header title={'Volga Siber 2008'} links={linkData} contactsPhone={'+7(912)467-08-12'}/>, document.getElementById('header'));
 }
 if (document.getElementById('billboard')) {
-    ReactDOM.render(<Billboard imgName="main_billboard.jpg" slogan="Мы все едем. Некоторые из нас с гораздо большим стилем." />, document.getElementById('billboard'));
+    ReactDOM.render(<Billboard {...billboardData} />, document.getElementById('billboard'));
 }

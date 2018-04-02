@@ -1,3 +1,4 @@
+@import '../../shared/styles/general.scss';
 .billboard {
     border: 0;
     border-radius: 0;
@@ -8,5 +9,45 @@
         font-size: 2em;
         font-weight: 300;
         padding-left: 5rem;
+    }
+    .billboard__car-attributes {
+        background-color: $color-white;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+        border-top: solid 1px rgba(151, 151, 151, 0.4);
+        color: $color-text-dark;
+        height: 130px;
+        font-weight: 300;
+        margin: 0;
+        .billboard__car-price {
+            border-bottom: 0;
+            border-right: 1px solid #eee;
+            padding-top: 25px;
+            padding-bottom: 25px;
+            padding-left: 95px;
+            vertical-align: top;
+            .billboard__car-price-now {
+                display: inline-block;
+                padding-right: 2rem;
+                p {
+                    display: inline-block;
+                    font-size: 2rem;
+                }
+                img {
+                    height: 1.5rem;
+                    vertical-align: inherit;
+                }
+            }
+            .billboard__car-price-date {
+                display: inline-block;
+                font-size: 0.9rem;
+                p {
+                    margin-bottom: 0;
+                }
+            }
+        }
+        .billboard__car-fuel {
+            border-right: 1px solid #eee;
+        }
+        .billboard__car-seat {}
     }
 }
