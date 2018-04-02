@@ -5,4 +5,13 @@ $color-white: #fff;
 $color-text-dark: #0d0d0d;
 body {
     margin: 0 48.5px 0 48.5px;
+    font-family: 'Roboto', sans-serif;
+}
+
+h2.section-title {
+    font-size: 2.2rem;
+    font-weight: 300;
+    margin: 0;
+    padding: 3rem 0 3rem 0;
+    text-align: center;
 }
