@@ -1,6 +1,6 @@
-import { IHeaderLinkData } from "../../shared/interfaces/IHeaderLinkData";
+import { ILinkData } from "../../shared/interfaces/ILinkData";
 
 export interface IHeaderProps {
     title: string;
-    links: IHeaderLinkData[];
+    links: ILinkData[];
 }

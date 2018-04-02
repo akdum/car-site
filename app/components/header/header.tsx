@@ -2,28 +2,23 @@ import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 
 import './header.module.scss';
-import { ILinkData } from '../../shared/interfaces/ILinkData';
-import { HeaderTabItem } from '../header-tab-item/headerTabItem';
 import { IHeaderProps } from './IHeaderProps';
-import { HeaderTabContentItem } from '../header-tab-content-item/headerTabContentItem';
+import {HeaderItem} from '../header-item/HeaderItem';
 
-export class Header extends React.Component<IHeaderProps,null> {
+export class Header extends React.Component<IHeaderProps, null> {
     render() {
-        return (
-            <nav className="navbar navbar-expand-lg navbar-light fixed-top">
-                <a className="navbar-brand" href="#">
-                    <div className="header__logo">
-                        <img src="../images/gaz_logo.png" />
+        const linkCount = this.props.links.length;
+        return(
+            <nav className="navbar navbar-expand-lg">
+                <div className="dropdown">
+                    <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    {this.props.title}
+                    </a>
+                    <div className="dropdown-menu" aria-labelledby="navbarDropdown">                                            
+                        {this.props.links.map((link, index) =><HeaderItem link={link} isLast={(index === linkCount - 1) ? true : false} />)}
                     </div>
-                    <div className="header__car-title">{this.props.title}</div>
-                </a>                
-                <ul className="nav nav-tabs">
-                    {this.props.links.map((item) => <li className="nav-item" key={item.tab.title}><HeaderTabItem isHasSublinks={item.subLinks ? true : false} linkData={item.tab}/></li>)}
-                </ul>
-                <div className="tab-content" id="myTabContent">
-                    {this.props.links.map((item) => <div className="tab-pane fade" id={item.tab.id} role="tabpanel" aria-labelledby={item.tab.id + "-tab"} key={item.tab.id}><HeaderTabContentItem {...item} /></div>)}
                 </div>
             </nav>
-        );
+        )
     }
 }
