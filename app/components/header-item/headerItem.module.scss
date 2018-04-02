@@ -1,6 +1,5 @@
 @import '../../shared/styles/general.scss';
-a.dropdown-item:any-link,
-a.dropdown-item:active,
-a.dropdown-item:visited {
-    color: $color-light;
+.dropdown-item {
+    font-weight: 300;
+    padding: 15px;
 }

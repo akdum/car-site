@@ -1,11 +1,32 @@
 @import '../../shared/styles/general.scss';
-nav {
+nav.navbar {
     background-color: $color-dark;
     font-family: 'Roboto', sans-serif;
-    font-size: 1.4rem;
-    a:active,
-    a:any-link,
-    a:hover {
-        color: $color-white;
+    font-size: 1.2em;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    .header__menu {
+        background-color: $color-light;
+        padding: 10px 10px 10px 70px;
+        width: 290px;
+        a:active,
+        a:any-link,
+        a:hover {
+            color: $color-white;
+        }
+        .dropdown-menu {
+            border-radius: 0;
+            border-top: 0;
+            color: $color-light;
+            margin: 0;
+            width: 290px;
+            a:active,
+            a:any-link,
+            a:hover {
+                background-color: #fff;
+                color: $color-light;
+            }
+        }
     }
 }

@@ -10,7 +10,7 @@ export class Header extends React.Component<IHeaderProps, null> {
         const linkCount = this.props.links.length;
         return(
             <nav className="navbar navbar-expand-lg">
-                <div className="dropdown">
+                <div className="dropdown header__menu">                
                     <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     {this.props.title}
                     </a>
