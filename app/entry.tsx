@@ -4,6 +4,7 @@ import { Header } from "./components/header/header";
 import { ILinkData } from './shared/interfaces/ILinkData';
 import { Billboard } from './components/billboard/Billboard';
 import { Gallery } from './components/gallery/Gallery';
+import { Links } from './components/links/Links';
 
 const linkData: ILinkData[] = [
     {title: 'Обзор', pageAddress: '/main.html'},
@@ -46,6 +47,12 @@ const galleryMix = {
     ]
 }
 
+const links = [
+    {title: 'auto.ru', iconName: ''},
+    {title: 'avito.ru', iconName: ''},
+    {title: 'drive2.ru', iconName: ''}
+]
+
 if (document.getElementById('header')) {
     ReactDOM.render(<Header title={'Volga Siber 2008'} links={linkData} contactsPhone={'+7(912)467-08-12'}/>, document.getElementById('header'));
 }
@@ -54,4 +61,7 @@ if (document.getElementById('billboard')) {
 }
 if (document.getElementById('galleryMix')) {
     ReactDOM.render(<Gallery {...galleryMix} />, document.getElementById('galleryMix'));
+}
+if (document.getElementById('links')) {
+    ReactDOM.render(<Links {...links} />, document.getElementById('links'));
 }
