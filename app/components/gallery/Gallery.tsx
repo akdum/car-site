@@ -11,7 +11,7 @@ export class Gallery extends React.Component<IGalleryProps, null> {
             <div className="gallery">
                 <h2 className="section-title">{this.props.title}</h2>
                 <div className="gallery__content">
-                    {this.props.rows.map((row) => <GalleryRow count={row.pictures.length} pictures={row.pictures} />)}                                
+                    {this.props.rows.map((row) => <GalleryRow pictures={row.pictures} />)}                                
                 </div>
             </div>
         )
