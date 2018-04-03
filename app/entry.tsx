@@ -6,8 +6,8 @@ import { Billboard } from './components/billboard/Billboard';
 import { Gallery } from './components/gallery/Gallery';
 
 const linkData: ILinkData[] = [
-    {title: 'Обзор'},
-    {title: 'Галлерея'},
+    {title: 'Обзор', pageAddress: '/main.html'},
+    {title: 'Галлерея', pageAddress: '/pages/gallery.html'},
     {title: 'Технологии'},
     {title: 'История'},
     {title: 'Ссылки'}
