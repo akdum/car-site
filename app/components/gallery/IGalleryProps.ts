@@ -1,7 +1,8 @@
 import { IGalleryPicture } from "../../shared/interfaces/IGalleryPicture";
+import { IGalleryRow } from "../../shared/interfaces/IGalleryRow";
 
 export interface IGalleryProps {
     title: string;
-    pictures: IGalleryPicture[];
+    rows: IGalleryRow[]
     pageLink?: string;
 }

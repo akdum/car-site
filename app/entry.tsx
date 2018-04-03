@@ -25,15 +25,23 @@ const billboardData = {
 
 const galleryMix = {
     title: 'Чем больше вы смотрите, тем больше инноваций вы видите',
-    pictures: [
-        {imgName: 'exterior1'},
-        {imgName: 'interior1'},
-        {imgName: 'exterior2'},
-        {imgName: 'interior2'},
-        {imgName: 'exterior3'},
-        {imgName: 'interior3'},
-        {imgName: 'exterior4'},
-        {imgName: 'interior4'}
+    rows: [
+        {
+            pictures: [
+                {imgName: 'exterior1'},
+                {imgName: 'interior1'},
+                {imgName: 'exterior2'},
+                {imgName: 'interior2'}
+            ]
+        },
+        {
+            pictures: [
+                {imgName: 'exterior3'},
+                {imgName: 'interior3'},
+                {imgName: 'exterior4'},
+                {imgName: 'interior4'}
+            ]
+        }
     ],
     pageLink: '/pages/gallery.html'
 }
