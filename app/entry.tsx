@@ -28,18 +28,18 @@ const galleryMix = {
     rows: [
         {
             pictures: [
-                {imgName: 'exterior1'},
-                {imgName: 'interior1'},
-                {imgName: 'exterior2'},
-                {imgName: 'interior2'}
+                {imgName: 'exterior1.jpg', position: '-80px 400px'},
+                {imgName: 'interior1.jpg', position: '-400px -50px'},
+                {imgName: 'exterior2.jpg', position: '-570px -250px'},
+                {imgName: 'interior2.jpg', position: '-150px -250px'}
             ]
         },
         {
             pictures: [
-                {imgName: 'exterior3'},
-                {imgName: 'interior3'},
-                {imgName: 'exterior4'},
-                {imgName: 'interior4'}
+                {imgName: 'exterior3.jpg', position: '-700px 400px'},
+                {imgName: 'interior3.jpg', position: '-700px 400px'},
+                {imgName: 'exterior4.jpg', position: '-400px -200px'},
+                {imgName: 'interior4.jpg', position: '-300px -300px'}
             ]
         }
     ],
