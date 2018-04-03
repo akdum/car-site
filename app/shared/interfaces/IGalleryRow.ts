@@ -1,5 +1,6 @@
 import { IGalleryPicture } from "./IGalleryPicture";
 
 export interface IGalleryRow {
-    pictures: IGalleryPicture[]
+    pictures: IGalleryPicture[],
+    pageLink?: string;
 }

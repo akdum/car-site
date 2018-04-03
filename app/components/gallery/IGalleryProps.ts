@@ -3,6 +3,5 @@ import { IGalleryRow } from "../../shared/interfaces/IGalleryRow";
 
 export interface IGalleryProps {
     title: string;
-    rows: IGalleryRow[]
-    pageLink?: string;
+    rows: IGalleryRow[];
 }

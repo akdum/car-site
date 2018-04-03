@@ -40,10 +40,10 @@ const galleryMix = {
                 {imgName: 'interior3.jpg', position: '-700px 400px'},
                 {imgName: 'exterior4.jpg', position: '-400px -200px'},
                 {imgName: 'interior4.jpg', position: '-300px -300px'}
-            ]
+            ],
+            pageLink: '/pages/gallery.html'
         }
-    ],
-    pageLink: '/pages/gallery.html'
+    ]
 }
 
 if (document.getElementById('header')) {

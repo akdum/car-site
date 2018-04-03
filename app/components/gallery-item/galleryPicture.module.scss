@@ -1,3 +1,35 @@
+@import '../../shared/styles/general.scss';
 .gallery__item {
     height: 320px;
+    padding: 0;
+    a,
+    a:any-link,
+    a:focus,
+    a:hover,
+    a:active,
+    a:visited {
+        background-color: $color-light-transparent;
+        display: block;
+        height: 100%;
+        width: 100%;
+        text-decoration: none;
+        color: $color-white;
+        font-weight: 300;
+        .gallery__item-link {
+            margin: auto;
+            position: relative;
+            top: 40%;
+            width: 175px;
+            div {
+                display: inline-block;
+                font-size: 2rem;
+                margin-right: 0.3rem;
+            }
+            i {
+                font-size: 2rem;
+                position: relative;
+                top: 0.3rem;
+            }
+        }
+    }
 }
