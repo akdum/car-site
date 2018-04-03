@@ -1,6 +1,8 @@
 @import '../../shared/styles/general.scss';
 .links {
     background-color: $color-dark;
-    padding: 90px 15px 90px 15px;
     width: 100%;
+    .links__links-area {
+        padding: 90px 15px 90px 15px;
+    }
 }

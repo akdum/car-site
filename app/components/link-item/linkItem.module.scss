@@ -1,0 +1,24 @@
+@import '../../shared/styles/general.scss';
+.link {
+    a,
+    a:hover,
+    a:active,
+    a:focus,
+    a:visited,
+    a:any-link {
+        color: $color-light2;
+        text-decoration: none;
+        .link__icon {
+            margin: auto;
+            width: 45px;
+            img {
+                border-radius: 5rem;
+            }
+        }
+        .link__name {
+            margin-top: 1rem;
+            font-size: 2rem;
+            font-weight: 300;
+        }
+    }
+}

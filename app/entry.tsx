@@ -48,9 +48,9 @@ const galleryMix = {
 }
 
 const links = [
-    {title: 'auto.ru', iconName: ''},
-    {title: 'avito.ru', iconName: ''},
-    {title: 'drive2.ru', iconName: ''}
+    {title: 'Auto.ru', iconName: 'auto.ru.jpg', pageAddress: 'https://auto.ru/'},
+    {title: 'Avito', iconName: 'avito.jpg', pageAddress: 'https://avito.ru/'},
+    {title: 'DRIVE2', iconName: 'drive2.jpg', pageAddress: 'https://drive2.ru/'}
 ]
 
 if (document.getElementById('header')) {
@@ -63,5 +63,5 @@ if (document.getElementById('galleryMix')) {
     ReactDOM.render(<Gallery {...galleryMix} />, document.getElementById('galleryMix'));
 }
 if (document.getElementById('links')) {
-    ReactDOM.render(<Links {...links} />, document.getElementById('links'));
+    ReactDOM.render(<Links links={links} />, document.getElementById('links'));
 }
