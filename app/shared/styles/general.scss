@@ -10,8 +10,9 @@ $color-white: #fff;
 $color-text-dark: #0d0d0d;
 $color-button: #2d96cd;
 body {
-    margin: 0 48.5px 0 48.5px;
     font-family: 'Roboto', sans-serif;
+    max-width: 1440px;
+    margin: 0 auto;
 }
 
 h2.section-title {
