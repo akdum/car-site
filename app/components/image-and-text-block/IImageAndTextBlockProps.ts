@@ -7,4 +7,5 @@ export interface IImageAndTextBlockProps {
     link: ILinkData;
     isWhiteBackground: boolean;
     isTextOnLeft: boolean;
+    additionalText?: string;
 }

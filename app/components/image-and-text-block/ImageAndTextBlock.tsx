@@ -8,7 +8,7 @@ import { ImageAndTextBlockText } from '../image-and-text-block-text/ImageAndtext
 export class ImageAndTextBlock extends React.Component<IImageAndTextBlockProps, null> {
     render() {
         const image = <img src={window.location.origin + '/images/blocks/' + this.props.imgName} />;
-        const text = <ImageAndTextBlockText title={this.props.title} text={this.props.text} link={this.props.link} />; 
+        const text = <ImageAndTextBlockText title={this.props.title} text={this.props.text} link={this.props.link} additionalText={this.props.additionalText} />; 
         return(
             <div className={'image-and-text-block-area row ' + (this.props.isWhiteBackground ? '' : ' background_gray')}>
                 <div className="col-md-6">

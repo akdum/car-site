@@ -4,4 +4,5 @@ export interface IImageAndTextBlockText {
     title: string;
     text: string;
     link: ILinkData;
+    additionalText?: string;
 }
