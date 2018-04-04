@@ -10,7 +10,7 @@ import { ImageAndTextBlock } from './components/image-and-text-block/ImageAndTex
 const linkData: ILinkData[] = [
     {title: 'Обзор', pageAddress: '/main.html'},
     {title: 'Галлерея', pageAddress: '/pages/gallery.html'},
-    {title: '{Характеристики}'},
+    {title: 'Характеристики'},
     {title: 'История'},
     {title: 'Ссылки'}
 ]
