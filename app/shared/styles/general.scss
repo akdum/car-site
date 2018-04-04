@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:300,400');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400');
 $color-dark: #102b4e;
 $color-light: #0678bc;
 $color-light2: #37a9e8;
@@ -9,8 +9,9 @@ $color-light-transparent: rgba(45,
 $color-white: #fff;
 $color-text-dark: #0d0d0d;
 $color-button: #2d96cd;
+$font-family: 'Montserrat', sans-serif;
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: $font-family;
     max-width: 1440px;
     margin: 0 auto;
 }

@@ -26,7 +26,7 @@ const billboardData = {
 }
 
 const galleryMix = {
-    title: 'Чем больше вы смотрите, тем больше инноваций вы видите',
+    title: 'Чем больше вы смотрите, тем больше инноваций вы видите.',
     rows: [
         {
             pictures: [

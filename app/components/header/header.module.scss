@@ -1,7 +1,7 @@
 @import '../../shared/styles/general.scss';
 nav.navbar {
     background-color: $color-dark;
-    font-family: 'Roboto', sans-serif;
+    font-family: $font-family;
     font-size: 1.2em;
     padding-top: 0;
     padding-bottom: 0;
