@@ -5,11 +5,12 @@ import { ILinkData } from './shared/interfaces/ILinkData';
 import { Billboard } from './components/billboard/Billboard';
 import { Gallery } from './components/gallery/Gallery';
 import { Links } from './components/links/Links';
+import { ImageAndTextBlock } from './components/image-and-text-block/ImageAndTextBlock';
 
 const linkData: ILinkData[] = [
     {title: 'Обзор', pageAddress: '/main.html'},
     {title: 'Галлерея', pageAddress: '/pages/gallery.html'},
-    {title: 'Технологии'},
+    {title: '{Характеристики}'},
     {title: 'История'},
     {title: 'Ссылки'}
 ]
@@ -47,6 +48,31 @@ const galleryMix = {
     ]
 }
 
+const blocksData = [
+    {
+        imgName: 'tracking.jpg',
+        title: 'Track control system',
+        text: 'Наслаждайтесь спокойствием с помощью Track control system, когда погода или дорожные условия становятся неблагоприятными - снег больше не является преградой для получения удовольствия от вождения!',
+        isWhiteBackground: true,
+        isTextOnLeft: false,
+        link: {
+            title: 'Перейти к характеристикам',
+            pageAddress: '/pages/technologiesAndCharacteristics.html'
+        }
+    },
+    {
+        imgName: 'tracking.jpg',
+        title: 'Track control system',
+        text: 'Наслаждайтесь спокойствием с помощью Track control system, когда погода или дорожные условия становятся неблагоприятными - снег больше не является преградой для получения удовольствия от вождения!',
+        isWhiteBackground: false,
+        isTextOnLeft: true,
+        link: {
+            title: 'Перейти к характеристикам',
+            pageAddress: '/pages/technologiesAndCharacteristics.html'
+        }
+    }
+]
+
 const links = [
     {title: 'Auto.ru', iconName: 'auto.ru.jpg', pageAddress: 'https://auto.ru/'},
     {title: 'Avito', iconName: 'avito.jpg', pageAddress: 'https://avito.ru/'},
@@ -61,6 +87,10 @@ if (document.getElementById('billboard')) {
 }
 if (document.getElementById('galleryMix')) {
     ReactDOM.render(<Gallery {...galleryMix} />, document.getElementById('galleryMix'));
+}
+if (document.querySelectorAll('.image-and-text-block').length > 0) {
+    const blocks = document.querySelectorAll('.image-and-text-block')
+    blocks.forEach((element, index) => ReactDOM.render(<ImageAndTextBlock {...blocksData[index]} />, element));
 }
 if (document.getElementById('links')) {
     ReactDOM.render(<Links links={links} />, document.getElementById('links'));

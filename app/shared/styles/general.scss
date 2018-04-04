@@ -8,6 +8,7 @@ $color-light-transparent: rgba(45,
 0.8);
 $color-white: #fff;
 $color-text-dark: #0d0d0d;
+$color-button: #2d96cd;
 body {
     margin: 0 48.5px 0 48.5px;
     font-family: 'Roboto', sans-serif;
@@ -19,4 +20,18 @@ h2.section-title {
     margin: 0;
     padding: 3rem 0 3rem 0;
     text-align: center;
+}
+
+.btn-primary {
+    background-color: $color-button;
+    border-color: $color-button;
+    font-weight: 300;
+    border-radius: 0;
+    padding: 15px 20px;
+    font-size: 1.2rem;
+}
+
+.btn-primary:hover {
+    background-color: $color-white;
+    color: $color-button;
 }

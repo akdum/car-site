@@ -1,0 +1,11 @@
+@import '../../shared/styles/general.scss';
+.image-and-text-block-area {
+    padding: 95px 8.33%;
+    img {
+        width: 100%;
+    }
+}
+
+.image-and-text-block-area.background_gray {
+    background-color: #f7f7f7;
+}
