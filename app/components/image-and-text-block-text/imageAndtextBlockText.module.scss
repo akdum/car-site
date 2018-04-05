@@ -15,3 +15,13 @@
         }
     }
 }
+
+@media (max-width: 767px) {
+    .image-and-text-block-text__header-and-text {
+        .image-and-text-block-text__header {
+            h2.block-title {
+                font-size: 2rem;
+            }
+        }
+    }
+}

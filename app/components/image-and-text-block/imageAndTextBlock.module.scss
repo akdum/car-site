@@ -9,3 +9,9 @@
 .image-and-text-block-area.background_gray {
     background-color: #f7f7f7;
 }
+
+@media (max-width: 767px) {
+    .image-and-text-block-area {
+        padding: 15px 15px 25px 15px;
+    }
+}

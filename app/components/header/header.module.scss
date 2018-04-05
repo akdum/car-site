@@ -33,3 +33,23 @@ nav.navbar {
         color: $color-white;
     }
 }
+
+@media (max-width: 767px) {
+    nav.navbar {
+        padding: 0px;
+        .header__menu {
+            padding: 3px 0;
+            width: 100%;
+            a:after {
+                float: right;
+                position: relative;
+                top: 10px;
+            }
+            .dropdown-menu {
+                border-left: 0;
+                border-right: 0;
+                width: 100%;
+            }
+        }
+    }
+}
