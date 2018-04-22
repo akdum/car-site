@@ -56,7 +56,7 @@ const blocksData = [
         isWhiteBackground: true,
         isTextOnLeft: false,
         link: {
-            title: 'Перейти к характеристикам',
+            title: 'Характеристики',
             pageAddress: '/pages/technologiesAndCharacteristics.html'
         }
     },
@@ -68,7 +68,7 @@ const blocksData = [
         isWhiteBackground: false,
         isTextOnLeft: true,
         link: {
-            title: 'Перейти к истории',
+            title: 'История',
             pageAddress: '/pages/technologiesAndCharacteristics.html'
         }
     }

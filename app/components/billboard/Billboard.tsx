@@ -9,9 +9,9 @@ export class Billboard extends React.Component<IBillboardProps, null> {
         return(
             <div className="billboard card bg-dark text-white">
                 <img className="card-img" src={"../images/billboard/" + this.props.imgName} alt="Card image" />
-                <div className="card-img-overlay">
+                {/* <div className="card-img-overlay">
                     <p className="card-title">{this.props.slogan}</p>
-                </div>
+                </div> */}
                 <div className="billboard__car-attributes row">
                     <div className="billboard__car-price col-md-5">
                         <div className="billboard__car-price-now">

@@ -33,7 +33,6 @@ nav.navbar {
         color: $color-white;
     }
 }
-
 @media (max-width: 767px) {
     nav.navbar {
         padding: 0px;
@@ -50,6 +49,9 @@ nav.navbar {
                 border-right: 0;
                 width: 100%;
             }
+        }
+        .header__contact {
+            display: none;
         }
     }
 }
